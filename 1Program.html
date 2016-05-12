@@ -9,17 +9,14 @@
             return myNumber;
         }
 
-        function ts() /*создания объектов временных рядов, для чего он я так и не допер */
-         {
+        function ts() /*создания объектов временных рядов, для чего он я так и не допер */ {
             var myel = document.getElementById('myData');
             /* Аргумент поиска элементов в DOM ,
                                                                              Вопрос что за var myel?*/
             var dd = new Date(); /*Функция предоставления текущей даты в формате dd*/
-            var year = dd.getFullYear(); /* Аргумент возвращает полное значение года.
-                                                    Для дат от 1000 до 9999 года getFullYear возвращает четырёхзначное число*/
-                                                    
-          myel.innerText = formatNumber(dd.getDate();) + '.' + formatNumber(dd.getMonth() + 1;) + '.' +
-                year + ' ' + formatNumber(dd.getHours();) + ':' + formatNumber(dd.getMinutes();); /*Как я понял, вывод информации 
+         
+            myel.innerText = formatNumber(dd.getDate()) + '.' + formatNumber(dd.getMonth() + 1) + '.' +
+                 dd.getFullYear() + ' ' + formatNumber(dd.getHours()) + ':' + formatNumber(dd.getMinutes()); /*Как я понял, вывод информации 
                                                                                        в правильном порядке */
         }
     </script>
