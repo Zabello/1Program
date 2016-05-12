@@ -15,14 +15,16 @@
             var myel = document.getElementById('myData'); /* Аргумент поиска элементов в DOM ,
                                                                   Вопрос что за var myel?*/
             var dd = new Date(); /*Функция предоставления текущей даты в формате dd*/
-        
+            var day = dd.getDate(); /* Аргумент возвращает целое число от 1 до 31 */
+            var month = dd.getMonth() + 1; /* Аргумент возвращает целое число от 0 до 11*/
             var year = dd.getFullYear(); /* Аргумент возвращает полное значение года.
                                          Для дат от 1000 до 9999 года getFullYear возвращает четырёхзначное число*/
-           
+            var hour = dd.getHours(); /* Аргумент возвращает целое число от 0 до 23 */
+            var min = dd.getMinutes(); /* Аргумент возвращает целое число от 0 до 59*/
 
 
-            myel.innerText = formatNumber(dd.getDate) + '.' + formatNumber(mdd.getMonth) + '.' +
-                year + ' ' + formatNumber(dd.getHours) + ':' + formatNumber(dd.getMinutes);  /*Как я понял, вывод информации 
+            myel.innerText = formatNumber(day) + '.' + formatNumber(month) + '.' +
+                year + ' ' + formatNumber(hour) + ':' + formatNumber(min);  /*Как я понял, вывод информации 
                                                                              в правильном порядке */
         }
     </script>
