@@ -4,8 +4,8 @@ function formatNumber(myNumber) /* Функция для добовления 0 
     }
     return myNumber;
 }
-function James(day) {
-    
+{
+
 }
 function ts() /*создания объектов временных рядов, для чего он я так и не допер */ {
     var myel = document.getElementById('myData');
