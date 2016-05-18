@@ -1,8 +1,23 @@
 <html>
+
 <head>
-    <script type='text/javascript' src='script/calculator.js'></script>
+    <meta charset="utf-8">
+    <script type='text/javascript' src='scripts/calculator.js'></script>
+
 </head>
+
 <body>
-    
+    <h1>Calculator</h1>
+    <input id='s1' value=''><br>
+    <input id='s2' value=''><br>
+    <select id='fun'>
+  <option  value ='1'>+</option>
+  <option  value ='2'>-</option>
+  <option  value ='3'>/</option>
+  <option  value ='4'>*</option>
+</select>
+    <input type="button" value="=" onclick="ts()" />
+    <span id='itog'></span>
 </body>
+
 </html>
