@@ -3,20 +3,21 @@
 <head>
     <meta charset="utf-8">
     <script type='text/javascript' src='scripts/calculator.js'></script>
+    <link rel="stylesheet" href="D:\Work\study\1Program\Калькулятор\calculator.css">
 
 </head>
 
 <body>
-    <h1>Calculator</h1>
-    <input id='s1' value=''><br>
-    <input id='s2' value=''><br>
+
+    Число 1: <input id='s1' value=''><br>
     <select id='fun'>
   <option  value ='1'>+</option>
   <option  value ='2'>-</option>
   <option  value ='3'>/</option>
   <option  value ='4'>*</option>
-</select>
-    <input type="button" value="=" onclick="ts()" />
+</select><br> Число 2: <input id='s2' value=''><br>
+
+    <input type="button" value="Расчитать" onclick="ts()" />
     <span id='itog'></span>
 
 </body>

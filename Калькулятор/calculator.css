@@ -1,0 +1,14 @@
+body {}
+
+input {
+    margin-bottom: 10px
+}
+
+select {
+    margin-bottom: 10px
+}
+
+.s1 {
+    color: red;
+    border-color: red;
+}
