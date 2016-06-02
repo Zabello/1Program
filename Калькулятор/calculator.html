@@ -9,13 +9,15 @@
 
 <body>
 
-    Число 1: <input id='s1' value=''><br>
+    Число 1: <input id='s1' value='' onkeyup="validffForm(this)">
+    <span id="msg">Вы ошиблись. Пожалуйста, введите число.</span><br>
     <select id='fun'>
   <option  value ='1'>+</option>
   <option  value ='2'>-</option>
   <option  value ='3'>/</option>
   <option  value ='4'>*</option>
-</select><br> Число 2: <input id='s2' value=''><br>
+</select><br> Число 2: <input id='s2' value='' onkeyup="validForm(this)">
+    <span id="msgq">Вы ошиблись. Пожалуйста, введите число.</span><br>
 
     <input type="button" value="Расчитать" onclick="ts()" />
     <span id='itog'></span>
