@@ -4,23 +4,30 @@
     <meta charset="utf-8">
     <script type='text/javascript' src='scripts/calculator.js'></script>
     <link rel="stylesheet" href="D:\Work\study\1Program\Калькулятор\calculator.css">
-
+    <!--<style>
+        input[type="text"] {
+            outline: red ;
+        }
+    </style>-->
 </head>
 
 <body>
 
-    Число 1: <input id='s1' value='' onkeyup="validffForm(this)">
-    <span id="msg">Вы ошиблись. Пожалуйста, введите число.</span><br>
-    <select id='fun'>
-  <option  value ='1'>+</option>
-  <option  value ='2'>-</option>
-  <option  value ='3'>/</option>
-  <option  value ='4'>*</option>
-</select><br> Число 2: <input id='s2' value='' onkeyup="validForm(this)">
-    <span id="msgq">Вы ошиблись. Пожалуйста, введите число.</span><br>
+    <!--Число 1: <input id="s1" value=" " onchange="good1()">-->
+    Число 1: <input id="s1" value=" " onkeyup="good1()">
+    <span id="msg" class="msg"></span><br>
+
+    <select id="fun" onkeyup="good2()">
+  <option  value ="1">+</option>
+  <option  value ="2">-</option>
+  <option  value ="3">/</option>
+  <option  value ="4">*</option>
+
+</select><br> Число 2: <input id="s2" value=" " onkeyup="good2()">
+    <span id="msg1" class="msg1"></span><br>
 
     <input type="button" value="Расчитать" onclick="ts()" />
-    <span id='itog'></span>
+    <span id="itog"></span>
 
 </body>
 

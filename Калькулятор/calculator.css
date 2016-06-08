@@ -1,7 +1,7 @@
-body {}
-
 input {
     margin-bottom: 10px;
+    /*outline: 1px solid red;*/
+    /*border: 1px solid #F00;*/
     /*border-color: red;*/
 }
 
@@ -9,20 +9,41 @@ select {
     margin-bottom: 10px;
 }
 
-.s1 {}
-
-.brd {}
-
-#msg {
-    color: red;
+#s1 {
+    /*border: 1px solid #F00;*/
+    /*color: red;*/
     /* Цвет текста */
-    display: none;
+    /*display: none;*/
     /* Прячем сообщение */
+    /*border-color: red*/
 }
 
-#msgq {
+#s2 {
+    /*border: 1px solid #F00;*/
+    /*color: red;*/
+    /* Цвет текста */
+    /*display: none;*/
+    /* Прячем сообщение */
+    /*border-color: red*/
+}
+
+.brd {
+    outline: 1px solid red;
+    display: none;
+}
+
+.msg {
     color: red;
     /* Цвет текста */
-    display: none;
+    /*display: none;*/
     /* Прячем сообщение */
+    /*border-color: red;*/
+}
+
+.msg1 {
+    color: red;
+    /* Цвет текста */
+    /*display: none;*/
+    /* Прячем сообщение */
+    /*border-color: red;*/
 }

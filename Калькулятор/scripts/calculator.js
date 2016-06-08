@@ -1,65 +1,124 @@
-function validffForm(f) {
-    // Если введено число, то скрываем предупреждение
-    if (isDigit(f.value)) document.getElementById("msg").style.display = "none";
-    // В противном случае отображаем предупреждение
-    else document.getElementById("msg").style.display = "inline";
-}
-// Функция по проверке, число введено или нет
-function isDigit(data) {
-    var numStr = "0123456789";
-    var k = 0;
-    for (i = 0; i < data.length; i++) {
-        thisChar = data.substring(i, i + 1);
-        if (numStr.indexOf(thisChar) != -1) k++;
-    }
-    if (k == data.length) return 1;
-    else return 0;
-}
-
-function validForm(f) {
-    // Если введено число, то скрываем предупреждение
-    if (isDigit(f.value)) document.getElementById("msgq").style.display = "none";
-    // В противном случае отображаем предупреждение
-    else document.getElementById("msgq").style.display = "inline";
-}
-// Функция по проверке, число введено или нет
-function isDigit(data) {
-    var numStr = "0123456789";
-    var k = 0;
-    for (i = 0; i < data.length; i++) {
-        thisChar = data.substring(i, i + 1);
-        if (numStr.indexOf(thisChar) != -1) k++;
-    }
-    if (k == data.length) return 1;
-    else return 0;
-}
-
-
-
 function ts() {
     var myel = document.getElementById('itog');
     var fun = document.getElementById('fun').value;
     var s1 = Number(document.getElementById('s1').value);
     var s2 = Number(document.getElementById('s2').value);
+    var msg3 = document.getElementById('msg1');
     var fun1;
 
-    if (isNaN(s1) || isNaN(s2)) {
+    /* if (isNaN(s1) || isNaN(s2)) {
         // alert("Проверте параметры ввода");
-    } else {
-        if (fun == 1) {
-            fun1 = +s1 + +s2;
-        } else if (fun == 2) {
-            fun1 = s1 - s2;
-        } else if (fun == 3) {
-            if (s2 !== 0) {
-                fun1 = s1 / s2;
-            } else {
-                // alert("Делить на ноль нельзя");
-            }
+    } else {*/
+    if (fun == 1) {
+        fun1 = +s1 + +s2;
+    } else if (fun == 2) {
+        fun1 = s1 - s2;
+    } else if (fun == 3) {
+        if (s2 !== 0) {
+            fun1 = s1 / s2;
         } else {
-            fun1 = s1 * s2;
+            msg3.innerText = "На ноль делить нельзя";
         }
-
-        myel.innerText = ("Результат:  " + fun1);
+    } else {
+        fun1 = s1 * s2;
     }
+
+    myel.innerText = ("Результат:  " + fun1);
+}
+
+function good1() {
+    var msg2 = document.getElementById('msg');
+    if (A11() < 5) {
+        msg2.innerText = 'Введите значение';
+    } else if (A22() < 5) {
+        msg2.innerText = 'Проверте ввод значения';
+    } else {
+        msg2.innerText = ''
+    }
+}
+
+function A11() {
+    var s1 = document.getElementById('s1').value;
+    var qaz
+    if (s1.length == 0) {
+        qaz = 4;
+    } else {
+        qaz = 5;
+    }
+    return qaz
+
+}
+
+function A22() {
+    var s1 = Number(document.getElementById('s1').value);
+    var qaz
+    if (isNaN(s1)) {
+        qaz = 4;
+    } else {
+        qaz = 5;
+    }
+    return qaz
+}
+
+function good2() {
+    var msg3 = document.getElementById('msg1');
+    var myel = document.getElementById('itog');
+    var fun = document.getElementById('fun').value;
+
+    if (fun == 3) {
+        if (AAA() < 5) {
+            msg3.innerText = "Введите значение";
+        } else if (BBB() < 5) {
+            msg3.innerText = "Проверте ввод значения";
+        } else if (CCC() < 5) {
+            msg3.innerText = "На ноль делить нельзя";
+            myel.innerText = "";
+        } else {
+            msg3.innerText = "";
+        }
+    } else {
+        if (AAA() < 5) {
+            msg3.innerText = "Введите значение";
+        } else if (BBB() < 5) {
+            msg3.innerText = "Проверте ввод значения";
+        } else {
+            msg3.innerText = ""
+        }
+    }
+}
+
+function AAA() {
+    var s2 = document.getElementById('s2').value;
+    var qaz
+    if (s2.length == 0) {
+        qaz = 4;
+    } else {
+        qaz = 5;
+    }
+    return qaz
+}
+
+function BBB() {
+    var s2 = Number(document.getElementById('s2').value);
+    var qaz
+    if (isNaN(s2)) {
+        qaz = 4;
+    } else {
+        qaz = 5;
+    }
+    return qaz
+}
+
+function CCC() {
+    var s2 = Number(document.getElementById('s2').value);
+    var ks = document.getElementById('fun').value;
+    var qaz
+    if (ks == 2) {
+        if (s2 == 0) {
+            qaz = 4;
+        } else {
+            qaz = 5;
+        }
+    }
+    return qaz
 }
