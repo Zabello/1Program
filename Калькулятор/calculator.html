@@ -3,17 +3,63 @@
 <head>
     <meta charset="utf-8">
     <script type='text/javascript' src='scripts/calculator.js'></script>
-    <link rel="stylesheet" href="D:\Work\study\1Program\Калькулятор\calculator.css">
-    <!--<style>
-        input[type="text"] {
-            outline: red ;
-        }
-    </style>-->
+    <link rel='stylesheet' href='D:\Work\study\1Program\Калькулятор\calculator.css'>
 </head>
 
 <body>
+    Число 1: <input id='b1' value='' onchange='ULTI(this)'>
+    <!--style="border: 1px solid red; border-color:black"-->
+    <span id="b1-s"></span>
+    <!--style='color:red'-->
+    <br>
+    <br>
+    <select id='znak' onchange='validate()'>
+        <option id='umn' value ='1'>*</option>
+        <option id='del' value ='2'>/</option>
+        <option id='slg' value ='3'>+</option>
+        <option id='vch' value ='4'>-</option>
+    </select>
+    <br>
+    <br> Число 2: <input id='b2' value='' onchange='ULTI(this)'>
+    <!--style="border: 1px solid red; border-color:black"-->
+    <span id="b2-s"></span>
+    <!-- style='color:red'-->
+    <br>
+    <br>
+    <input type="button" value="рассчитать" onclick="ts()" />
+    <span>Результат: </span><span id='itog'></span>
+</body>
 
-    <!--Число 1: <input id="s1" value=" " onchange="good1()">-->
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<html>
+<head>
+    <meta charset="utf-8">
+    <script type='text/javascript' src='scripts/calculator.js'></script>
+    <link rel="stylesheet" href="D:\Work\study\1Program\Калькулятор\calculator.css">
+   
+</head>
+<body>
     Число 1: <input id="s1" value=" " onkeyup="good1()">
     <span id="msg" class="msg"></span><br>
 
@@ -30,5 +76,4 @@
     <span id="itog"></span>
 
 </body>
-
-</html>
+</html>-->

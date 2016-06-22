@@ -1,39 +1,50 @@
 input {
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
     /*outline: 1px solid red;*/
     /*border: 1px solid #F00;*/
     /*border-color: red;*/
 }
 
 select {
-    margin-bottom: 10px;
+    /*margin-bottom: 10px;*/
 }
 
-#s1 {
+#b1-s {
     /*border: 1px solid #F00;*/
-    /*color: red;*/
+    color: red;
     /* Цвет текста */
     /*display: none;*/
     /* Прячем сообщение */
     /*border-color: red*/
 }
 
-#s2 {
+#b2-s {
     /*border: 1px solid #F00;*/
-    /*color: red;*/
+    color: red;
     /* Цвет текста */
     /*display: none;*/
     /* Прячем сообщение */
     /*border-color: red*/
 }
 
-.brd {
+#b1 {
+    border: 1px solid red;
+    border-color: black;
+}
+
+#b2 {
+    border: 1px solid red;
+    border-color: black;
+}
+
+
+/*.brd {
     outline: 1px solid red;
     display: none;
-}
+}*/
 
 .msg {
-    color: red;
+    /*color: red;*/
     /* Цвет текста */
     /*display: none;*/
     /* Прячем сообщение */
@@ -41,7 +52,7 @@ select {
 }
 
 .msg1 {
-    color: red;
+    /*color: red;*/
     /* Цвет текста */
     /*display: none;*/
     /* Прячем сообщение */
