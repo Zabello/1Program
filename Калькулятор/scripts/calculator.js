@@ -106,3 +106,5 @@ function PNN(el) {
     }
     return qaz
 }
+
+// цыыыыы
