@@ -54,8 +54,7 @@ function ULTI(el) {
     var Nol = PNN(el);
     if (Bukv) {
         errorMessage = ' вводите буквы';
-    } else
-    if (Del) {
+    } else if (Del) {
         errorMessage = ' пустая ячейка';
     } else if (Nol && el.id == 'b2' && ks == 2) {
         errorMessage = ' делить на ноль нельзя';
@@ -106,5 +105,3 @@ function PNN(el) {
     }
     return qaz
 }
-
-// цыыыыы
